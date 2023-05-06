@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "menu main"
+        "footer footer";
+    grid-template-columns: 1fr 6fr;
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(145, 236, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.menu {
+    grid-area: menu;
+    height: 100%;
+    background-color: rgb(145, 250, 242);
+    padding: 30px;
+    padding-top: 0.1em;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding-top: 1em;
+}
+li{
+    font-size: 1em;
+    list-style: none;
+}
+
+li:hover{
+    cursor: pointer;
+    color:white;
+}
+
+p strong{
+    font-size: 1.5em;
+}
+
+span{
+    font-size: 0.8em;
+    color: grey;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 100%;
+    /* background-color: rgb(137, 204, 230); */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin:20px;
+    max-width: 300px;
+    width: 400px;
+}
+
+button{
+    height: 60px;
+    background-color: white;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(145, 236, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 4px;
+}
+
+.imagenes {
+    width: 100%;
+    height: 200px;
+}
